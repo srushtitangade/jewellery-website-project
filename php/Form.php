@@ -39,9 +39,13 @@
             <span class="details">Address</span>
             <input type="text" name = "Address" placeholder = "Enter your Address" required>
           </div>
+          <div class="input-box">
+            <span class="details">Product Id</span>
+            <input type="text" name = "ProductId" placeholder = "Enter Product Ids" required>
+          </div>
         </div>
         <div class="button">
-          <input type="submit"name = "submit" value="Register">
+          <input type="submit"name = "submit" value="Place Order">
         </div>
       </form>
     </div>

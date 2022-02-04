@@ -9,8 +9,9 @@ include "dbConn.php"; // Using database connection file here
 		$phoneNumber = $_POST['phoneNumber'];
 		$Date = $_POST['dateOfBirth'];
 		$email = $_POST['Email'];
+		$productId = $_POST['ProductId']
 
-			$insert = mysqli_query($db,"INSERT INTO `userDetails`(`Name`, `Address`,`Email`,`Phone Number`, `Date Of Birth`) VALUES ('$fullname','$address','$email','$phoneNumber','$Date')");
+			$insert = mysqli_query($db,"INSERT INTO `userDetails`(`Name`, `Address`,`Email`,`Phone Number`, `Date Of Birth`,`productId`) VALUES ('$fullname','$address','$email','$phoneNumber','$Date','$productId')");
 	
 		if(!$insert)
 		{

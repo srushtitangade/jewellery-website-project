@@ -14,38 +14,26 @@
    </head>
 <body>
   <div class="container">
-    <div class="title">User Details</div>
+    <div class="title">Cancel Order</div>
     <p>Please enter your details</p>
     <div class="content">
-      <form action="process.php" method = "POST">
+      <form action="process2.php" method = "POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
             <input type="text" name = "Name" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
-            <span class="details">Phone Number</span>
+            <span class="details">Phone Number</span>  
             <input type="text" name = "phoneNumber" placeholder="Enter your number" pattern="[1-9]{1}[0-9]{9}" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email Id</span>
-            <input type="text" name = "Email" placeholder="Enter your Email Id" required>
-          </div>
-		  <div class="input-box">
-            <span class="details">Date of Birth</span>
-            <input type="text" name = "dateOfBirth" placeholder = "Enter your Date of Birth" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Address</span>
-            <input type="text" name = "Address" placeholder = "Enter your Address" required>
-          </div>
+          </div> 
           <div class="input-box">
             <span class="details">Product Id</span>
             <input type="text" name = "ProductId" placeholder = "Enter Product Ids" required>
           </div>
         </div>
         <div class="button">
-          <input type="submit"name = "submit" value="Place Order">
+          <input type="submit"name = "submit" value="Cancel Order">
         </div>
       </form>
     </div>

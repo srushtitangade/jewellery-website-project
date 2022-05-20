@@ -37,6 +37,7 @@ body{
 }
 form .user-details .input-box{
   margin-bottom: 15px;
+  padding: 5px;
   width: calc(100% / 2 - 20px);
 }
 form .input-box span.details{

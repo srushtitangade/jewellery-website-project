@@ -5,22 +5,18 @@ include "dbConn.php"; // Using database connection file here
 	if(isset($_POST['submit']))
 	{		
 		$fullname = $_POST['Name'];
-		$address = $_POST['Address'];
 		$phoneNumber = $_POST['phoneNumber'];
-		$Date = $_POST['dateOfBirth'];
-		$email = $_POST['Email'];
 		$productId = $_POST['ProductId'];
-		$Price1 = 'Rs.87000';
 
-			$insert = mysqli_query($db,"INSERT INTO `userDetails`(`Name`, `Address`,`Email`,`Phone Number`, `Date Of Birth`,`ProductId`,`Price`) VALUES ('$fullname','$address','$email','$phoneNumber','$Date','$productId','$Price1')");
+			$delete = mysqli_query($db,"DELETE FROM `userdetails` WHERE `ProductId`='$productId' AND `Name`='$fullname';");
 	
-		if(!$insert)
+		if(!$delete)
 		{
 			echo '<script>alert("Something went wrong, please try again")</script>';
 		}
 		else
 		{
-			echo '<script>alert("Order Has Been Placed Successfully. Your total amount to be paid is : Rs.68000")</script>';
+			echo '<script>alert("Your Order Has Been Cancelled.You will receive your refund with 2 to 3 business days")</script>';
 			$url='http://localhost/jewellery-website-main new/index.html';
 			echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 		}
